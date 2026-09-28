@@ -90,7 +90,7 @@ export default function HomePage() {
         {quickCards.map((card) => {
           const Icon = card.icon;
           return (
-            <Link key={card.href} href={card.href}>
+            <Link key={card.href} href={card.href as any}>
               <Card className="h-full bg-white/85 transition-transform hover:-translate-y-1">
                 <CardContent className="flex h-full flex-col p-6">
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
